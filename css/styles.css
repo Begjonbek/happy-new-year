@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../image/Rectangle\ 6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.happy-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.happy-menu{
+    max-width: 1050px;
+    padding: 30px 77px 50px;
+    border-radius: 36px;
+    background: rgba(9, 33, 67, 0.80);
+    box-shadow: 24px 26px 4px -11px rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(10px);
+}
+.happyTitle {
+    color: #FFF;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 200;
+    letter-spacing: 11.25px;
+    margin-bottom: 43px;
+}
+.happy-text {
+    color: #A5DEFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 6.4px;
+    margin-bottom: 43px;
+}
+.countdown {
+    display: grid;
+    grid-template-columns:repeat(4 , 1fr);
+    grid-template-rows: 1fr;
+    gap:26px;
+    
+}
+.happy-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 46px 29px;
+    border-radius: 22px;
+    background: #080F1A;
+}
+.happy-number {
+    color: #FFF;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 900;
+}
+.happy-item-text {
+    color: #A5DEFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1024px) {
+    .happyTitle{
+        font-size: 65px;
+        margin-bottom: 30px;
+    }
+    .countdown{
+        grid-template-columns:repeat(2 , 1fr);
+        grid-template-rows:repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width:768px) {
+    .happyTitle{
+        font-size: 48px;
+    }
+    .happy-text{
+        font-size: 26px;
+    }
+    .countdown{
+        gap: 15px;
+    }
+   
+    .happy-menu{
+        padding: 25px 40px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .countdown{
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows:repeat(4, 1fr);
+        gap: 20px;
+    }
+    .happyTitle{
+        font-size: 38px;
+    }
+    .happy-text{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+   .happy-menu{
+    padding: 30px 15px;
+   }
+}
